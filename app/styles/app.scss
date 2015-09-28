@@ -3,9 +3,88 @@
 
 // colors
 $black: #000;
+$white: #fff;
+$accent: #FF6666;
 
 // font sizes
 // $small:
 // $medium:
 // $large:
 // $huge:
+
+// helpers
+.center-text {
+  text-align: center;
+}
+
+// general
+#content-wrapper {
+  margin-top: 6%;
+  min-height: 100vh;
+}
+
+body {
+  background: url('/assets/images/background.jpg') no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  min-height: 100%;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 300;
+  color: $white;
+  a {
+    color: $white;
+    transition: color 0.5s linear;
+    &:hover {
+      color: $accent;
+      transition: color 0.5s linear;
+    }
+  }
+}
+
+.navbar-default {
+  background: rgba(255, 255, 255, 0);
+  color: $white;
+}
+
+.navbar-default .navbar-toggle{
+  border-color:$white;
+  background:#006B6B;
+  color: $white;
+}
+
+.navbar-default .navbar-toggle:hover, .navbar-toggle:active, .navbar-toggle:focus {
+  border-color:$white;
+  background:$accent;
+  color: $white;
+}
+
+.navbar-default .navbar-brand {
+  color: $white;
+  &:hover {
+    color: $accent;
+  }
+}
+
+.navbar-default .navbar-text {
+  color: $white;
+}
+
+.navbar-default .navbar-text:hover {
+  color: $accent;
+}
+
+.navbar-default .navbar-nav > li > a {
+  color: $white;
+}
+
+.navbar-default .navbar-nav > li > a:hover {
+  color: $accent;
+}
+
+// footer
+footer {
+  color: $white;
+  clear: both;
+}

@@ -1,0 +1,36 @@
+<form>
+  <div class="form-group">
+    <label for="title">title</label>
+    {{input value=title class="form-control" }}
+  </div>
+
+  <div class="form-group">
+    <label for="body">body</label>
+    {{textarea rows=5 value=body class="form-control" }}
+  </div>
+
+  <div class="form-group">
+    <label for="price">price</label>
+    {{input value=price class="form-control" }}
+  </div>
+
+  <div class="form-group">
+    <label for="category">category</label>
+    {{input value=category class="form-control" }}
+  </div>
+
+  <ul class="list-inline">
+    {{#each model as |model|}}
+    <li {{action "sendToInput" model}} class="label label-default">{{model.name}}</li>
+    {{/each}}
+  </ul>
+
+  <div class="form-group">
+    <label for="category">Choose a category from above</label><br>
+    {{input value=category id="category" class="form-control"}}
+  </div>
+
+  <div class="row">
+    <button class="btn btn-primary" {{action 'savePost'}} >Create</button>
+  </div>
+</form>
