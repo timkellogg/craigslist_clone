@@ -1,1 +1,43 @@
 <button {{action 'deletePost' model}}>Remove</button>
+
+{{#if showEditForm}}
+  <button {{action 'hideEdit'}}>Cancel Edit</button>
+  <form>
+    <div class="form-group">
+      <label for="title">title</label>
+      {{input value=title id="title" class="form-control" value=title placeholder=model.title}}
+    </div>
+
+    <div class="form-group">
+      <label for="body">body</label>
+      {{textarea rows=5 id="body" class="form-control" value=model.body}}
+    </div>
+
+    <div class="form-group">
+      <label for="price">price</label>
+      {{input value=price id="price" class="form-control" value=price placeholder=model.price}}
+    </div>
+
+    <div class="form-group">
+      <label for="image">add a pic</label>
+      {{input value=image id="image" class="form-control" value=image placeholder=model.image}}
+    </div>
+
+    <!-- <ul class="list-inline">
+      {{#each model as |model|}}
+      <li {{action "sendToInput" model}} class="label label-default">{{model.name}}</li>
+      {{/each}}
+    </ul>
+
+    <div class="form-group">
+      <label for="category">Choose a category from above</label><br>
+      {{input value=category id="category" class="form-control" readonly=true}}
+    </div> -->
+
+    <div class="row">
+      <button class="btn btn-primary pull-right" {{action 'editPost' model}} >Submit Edit</button>
+    </div>
+  </form>
+{{else}}
+  <button {{action 'showEdit'}}>Edit</button>
+{{/if}}
