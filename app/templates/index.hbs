@@ -1,11 +1,12 @@
 <div id="index-page-wrapper">
 
   <div class="center-text">
-    <h1>All posts</h1>
+    <h1>recent listings</h1>
   </div>
 
   {{#each model as |model|}}
-    {{post-tile model=model}}
+    {{#link-to 'post' model.id}}
+      {{post-tile model=model}}
+    {{/link-to}}
   {{/each}}
-
 </div>

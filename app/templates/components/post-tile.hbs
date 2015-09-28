@@ -1,6 +1,15 @@
 <div class="col-md-4">
-  <p>{{model.image}}</p>
-  <p>{{model.title}}</p>
-  <p>{{model.body}}</p>
-  <p>{{moment-from-now model.time}}</p>
+  <div class="post-wrapper">
+    <div class="post-title">
+      {{model.title}}
+    </div>
+    <hr>
+    <div class="post-image">
+      <img src={{model.image}} alt="picture">
+    </div>
+    <hr>
+    <div class="post-time">
+      {{model.category.name}} &mdash; {{moment-from-now model.time}}
+    </div>
+  </div>
 </div>

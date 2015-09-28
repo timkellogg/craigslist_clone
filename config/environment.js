@@ -22,6 +22,7 @@ module.exports = function(environment) {
 
     googleFonts: [
       'Raleway:100,200,300,400,500,600,700',
+      'Condiment:400'
     ],
 
     // Set or update content security policies

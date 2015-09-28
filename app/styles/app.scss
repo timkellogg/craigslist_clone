@@ -45,14 +45,14 @@ $darken: darken($accent, 10%);
 }
 
 body {
-  background: url('/assets/images/background.jpg') no-repeat center center fixed;
+  background: url('/assets/images/wallpaper.jpg') no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
   min-height: 100%;
   font-family: 'Raleway', sans-serif;
-  font-weight: 300;
+  font-weight: 500;
   color: $white;
   a {
     color: $white;
@@ -62,6 +62,13 @@ body {
       transition: color 0.5s linear;
     }
   }
+}
+
+h1 {
+  font-family: 'Condiment', cursive;
+  font-size: 5em;
+  color: $accent;
+  text-shadow: 2px 2px $darken;
 }
 
 /* Navigation
@@ -86,6 +93,7 @@ body {
 
 .navbar-default .navbar-brand {
   color: $white;
+  font-family: 'Condiment', cursive;
   &:hover {
     color: $accent;
   }
@@ -126,7 +134,32 @@ label {
   border-radius: 0px;
 }
 
+/* post-tile
+================*/
+.post-wrapper {
+  border: 2px solid $accent;
+  background: rgba(0, 0, 0, 0.2);
+  border-radius: 1rem;
+  margin-top: 8%;
+}
 
+.post-title {
+  text-align: center;
+  font-size: 1.5em;
+  margin-top: 5%;
+}
+
+.post-image img {
+  width: 32rem;
+  margin-left:3.5%;
+  border-radius: 1rem;
+}
+
+.post-time {
+  text-align: center;
+  font-weight: 300;
+  margin-bottom: 4%;
+}
 
 
 // footer
