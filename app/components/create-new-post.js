@@ -17,7 +17,7 @@ export default Ember.Component.extend({
         price: this.get('price'),
         time: new Date(),
         edited: false,
-        category: this.get('category')
+        category: this.categoryRecord
       };
       this.sendAction('savePost', params);
     }

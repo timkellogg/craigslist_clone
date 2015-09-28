@@ -3,8 +3,12 @@
 
 // colors
 $black: #000;
+$gray: #333;
 $white: #fff;
 $accent: #FF6666;
+$lighten: lighten($accent, 10%);
+$darken: darken($accent, 10%);
+
 
 // font sizes
 // $small:
@@ -15,6 +19,23 @@ $accent: #FF6666;
 // helpers
 .center-text {
   text-align: center;
+}
+
+// buttons
+.btn {
+  border-radius: 0px;
+}
+
+.btn-primary {
+  background: $white;
+  color: $gray;
+  border: $accent;
+  transition: background 0.5s linear;
+  &:hover {
+    background: $accent;
+    color: $gray;
+    transition: background 0.5s linear;
+  }
 }
 
 // general
@@ -42,6 +63,9 @@ body {
     }
   }
 }
+
+/* Navigation
+================*/
 
 .navbar-default {
   background: rgba(255, 255, 255, 0);
@@ -82,6 +106,28 @@ body {
 .navbar-default .navbar-nav > li > a:hover {
   color: $accent;
 }
+
+/* Labels
+================*/
+
+.label {
+  &:hover {
+    cursor: pointer;
+  }
+}
+
+/* forms
+================*/
+label {
+  font-weight: 300;
+}
+
+.form-control {
+  border-radius: 0px;
+}
+
+
+
 
 // footer
 footer {

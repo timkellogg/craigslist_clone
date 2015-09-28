@@ -1,22 +1,17 @@
 <form>
   <div class="form-group">
     <label for="title">title</label>
-    {{input value=title class="form-control" }}
+    {{input value=title id="title" class="form-control" }}
   </div>
 
   <div class="form-group">
     <label for="body">body</label>
-    {{textarea rows=5 value=body class="form-control" }}
+    {{textarea rows=5 id="body" value=body class="form-control" }}
   </div>
 
   <div class="form-group">
     <label for="price">price</label>
-    {{input value=price class="form-control" }}
-  </div>
-
-  <div class="form-group">
-    <label for="category">category</label>
-    {{input value=category class="form-control" }}
+    {{input value=price id="price" class="form-control" }}
   </div>
 
   <ul class="list-inline">
@@ -27,10 +22,10 @@
 
   <div class="form-group">
     <label for="category">Choose a category from above</label><br>
-    {{input value=category id="category" class="form-control"}}
+    {{input value=category id="category" class="form-control" readonly=true}}
   </div>
 
   <div class="row">
-    <button class="btn btn-primary" {{action 'savePost'}} >Create</button>
+    <button class="btn btn-primary pull-right" {{action 'savePost'}} >Create</button>
   </div>
 </form>
