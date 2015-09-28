@@ -1,5 +1,18 @@
-{{model.title}}
-
-{{model.body}}
-
-{{edit-post model=model deletePost="deletePost" editPost="editPost"}}
+<div class="ind-post-wrapper row">
+  <div class="ind-post-title">
+    {{model.title}} - {{model.price}}
+  </div>
+  <div class="ind-post-body-wrapper">
+    <div class="ind-post-image col-md-6 center-text">
+      <img src={{model.image}} alt="photo">
+    </div>
+    <div class="ind-post-body col-md-6">
+      <p>{{model.body}}</p>
+    </div>
+  </div>
+</div>
+<br>
+<br>
+<div class="row">
+  {{edit-post model=model deletePost="deletePost" editPost="editPost"}}
+</div>

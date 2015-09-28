@@ -161,6 +161,38 @@ label {
   margin-bottom: 4%;
 }
 
+/* ind-post-page
+================*/
+.ind-post-title {
+  text-align: center;
+  font-size: 4em;
+  font-family: 'Condiment', cursive;
+  margin-top: 5%;
+}
+
+.ind-post-body-wrapper {
+  margin-top: 5%;
+  margin-bottom: 5%;
+}
+
+.ind-post-body {
+  border: 2px solid $accent;
+  min-height: 32rem;
+
+  border-radius: 1rem;
+  p {
+    margin-top: 2%;
+    font-size: 1.2em;
+  }
+}
+.ind-post-image {
+  text-align: left;
+}
+
+.ind-post-image img {
+  height: 32rem;
+  border-radius: 1rem;
+}
 
 // footer
 footer {
