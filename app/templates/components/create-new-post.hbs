@@ -15,11 +15,6 @@
     {{input type="number" value=price id="price" class="form-control" }}
   </div>
 
-  <div class="form-group">
-    <label for="image">add a pic</label>
-    {{input value=image id="image" class="form-control" }}
-  </div>
-
   <ul class="list-inline">
     {{#each model as |model|}}
     <li {{action "sendToInput" model}} class="label label-default">{{model.name}}</li>
@@ -37,13 +32,13 @@
 {{else}}
 
     <div class="form-group">
-      <label for="address">Address</label>
-      {{input value=address id="address" class="form-control" }}
+      <label for="image">add a pic</label>
+      {{input value=image id="image" class="form-control" }}
     </div>
 
     <div class="form-group">
-      <label for="zip">Zip</label>
-      {{input type="number" value=zip id="zip" class="form-control" }}
+      <label for="address">Address</label>
+      {{input value=address id="address" class="form-control" }}
     </div>
 
   <div class="row">

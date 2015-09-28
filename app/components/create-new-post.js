@@ -20,7 +20,6 @@ export default Ember.Component.extend({
         category: this.categoryRecord,
         image: this.get('image'),
         address: this.get('address'),
-        zip: this.get('zip')
       };
       this.sendAction('savePost', params);
     },

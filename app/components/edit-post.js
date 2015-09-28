@@ -24,7 +24,6 @@ export default Ember.Component.extend({
         edited: new Date(),
         image: this.get('image'),
         address: this.get('address'),
-        zip: this.get('zip')
       };
       this.sendAction('editPost', model, params);
       this.set("showEditForm", false);

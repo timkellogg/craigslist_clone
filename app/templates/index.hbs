@@ -3,10 +3,9 @@
   <div class="center-text">
     <h1>recent listings</h1>
   </div>
-
-  {{#each model as |model|}}
-    {{#link-to 'post' model.id}}
-      {{post-tile model=model}}
-    {{/link-to}}
-  {{/each}}
+    {{#each model as |model|}}
+      {{#link-to 'post' model.id}}
+        {{post-tile model=model}}
+      {{/link-to}}
+    {{/each}}
 </div>
