@@ -24,16 +24,15 @@
         {{input value=image id="image" class="form-control" value=image placeholder=model.image}}
       </div>
 
-      <!-- <ul class="list-inline">
-        {{#each model as |model|}}
-        <li {{action "sendToInput" model}} class="label label-default">{{model.name}}</li>
-        {{/each}}
-      </ul>
+      <div class="form-group">
+        <label for="address">Address</label>
+        {{input value=address id="address" class="form-control" placeholder=model.address}}
+      </div>
 
       <div class="form-group">
-        <label for="category">Choose a category from above</label><br>
-        {{input value=category id="category" class="form-control" readonly=true}}
-      </div> -->
+        <label for="zip">Zip</label>
+        {{input type="number" value=zip id="zip" class="form-control" placeholder=model.zip}}
+      </div>
 
       <div class="row">
         <button class="btn btn-primary pull-right" {{action 'editPost' model}} >Submit Edit</button>

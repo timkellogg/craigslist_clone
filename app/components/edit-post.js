@@ -22,7 +22,9 @@ export default Ember.Component.extend({
         body: this.get('body'),
         price: this.get('price'),
         edited: new Date(),
-        image: this.get('image')
+        image: this.get('image'),
+        address: this.get('address'),
+        zip: this.get('zip')
       };
       this.sendAction('editPost', model, params);
       this.set("showEditForm", false);

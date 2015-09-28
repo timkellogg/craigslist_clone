@@ -1,7 +1,7 @@
 import Ember from 'ember';
 
 export default Ember.Component.extend({
-  categoryRecord: "",
+  initialFormShowing: true,
 
   actions: {
     sendToInput(model) {
@@ -18,9 +18,15 @@ export default Ember.Component.extend({
         time: new Date(),
         edited: false,
         category: this.categoryRecord,
-        image: this.get('image')
+        image: this.get('image'),
+        address: this.get('address'),
+        zip: this.get('zip')
       };
       this.sendAction('savePost', params);
+    },
+
+    nextForm() {
+      this.set('initialFormShowing', false);
     }
   }
 });
