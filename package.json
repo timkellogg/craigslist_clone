@@ -46,6 +46,7 @@
     "ember-masonry-grid": "0.4.1",
     "ember-moment": "4.0.1",
     "ember-select-list": "0.9.0",
-    "emberfire": "1.5.0"
+    "emberfire": "1.5.0",
+    "torii": "0.6.0"
   }
 }

@@ -20,6 +20,10 @@ module.exports = function(environment) {
       // when it is created
     },
 
+    torii: {
+      sessionServiceName: 'session'
+    },
+
     googleFonts: [
       'Raleway:100,200,300,400,500,600,700',
       'Condiment:400'

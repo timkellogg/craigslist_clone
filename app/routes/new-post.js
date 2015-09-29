@@ -31,7 +31,6 @@ export default Ember.Route.extend({
       // save each category into the city
       categories.forEach(function(c) {
         this.store.findRecord('category', c).then(function(result) {
-          debugger;
           newCity.result.save();
         });
       })
