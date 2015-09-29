@@ -1,0 +1,11 @@
+{{input value=query id="query" class="form-control" key-press="searchPosts" placeholder="ruby on rails"}}
+
+
+<div class="center-text">
+  <h1>recent listings</h1>
+</div>
+{{#each searchPosts as |model|}}
+{{#link-to 'post' model.id}}
+{{post-tile model=model}}
+{{/link-to}}
+{{/each}}
