@@ -2,6 +2,8 @@
 <div id="content-wrapper" class="container">
   {{#if session.isAuthenticated}}
 Logged in as {{session.currentUser.displayName}}
+
+{{session.uid}}
 <button {{action "signOut"}}>Sign out</button>
 {{outlet}}
 {{else}}
